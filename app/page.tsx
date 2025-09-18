@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useMiniKit } from '@coinbase/minikit';
 import { PredictionCard } from '../components/PredictionCard';
 import { CreateMarketModal } from '../components/CreateMarketModal';
 import { CreatorInfoBar } from '../components/CreatorInfoBar';
@@ -10,7 +9,11 @@ import { Plus, TrendingUp, Users, DollarSign } from 'lucide-react';
 import type { Market } from '../lib/types';
 
 export default function HomePage() {
-  const { user, client } = useMiniKit();
+  // Mock user data for now - in a real Mini App, this would come from MiniKit context
+  const user = {
+    address: '0x1234567890123456789012345678901234567890',
+    displayName: 'DemoUser'
+  };
   const [markets, setMarkets] = useState<Market[]>([]);
   const [selectedMarket, setSelectedMarket] = useState<Market | null>(null);
   const [showCreateModal, setShowCreateModal] = useState(false);
