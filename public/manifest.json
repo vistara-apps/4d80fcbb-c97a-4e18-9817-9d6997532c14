@@ -1,0 +1,14 @@
+{
+  "name": "CreatorCoin Predict",
+  "description": "CreatorCoin Predict is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://4d80fcbb-c97a-4e18-9817-9d6997532c14.vercel.app",
+  "properties": {
+    "app": {
+      "name": "CreatorCoin Predict",
+      "description": "CreatorCoin Predict is a Base Mini App built with Zara.",
+      "url": "https://4d80fcbb-c97a-4e18-9817-9d6997532c14.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}

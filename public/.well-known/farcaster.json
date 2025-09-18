@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "CreatorCoin Predict",
+    "subtitle": "Built with Zara",
+    "description": "CreatorCoin Predict is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://4d80fcbbc97a4e1898179d6997532c14-hjhj.vercel.app",
+    "splashImageUrl": "https://4d80fcbbc97a4e1898179d6997532c14-hjhj.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://4d80fcbbc97a4e1898179d6997532c14-hjhj.vercel.app/image.png",
+    "tagline": "CreatorCoin Predict",
+    "screenshotUrls": [
+      "https://4d80fcbbc97a4e1898179d6997532c14-hjhj.vercel.app/screenshot.png",
+      "https://4d80fcbbc97a4e1898179d6997532c14-hjhj.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://4d80fcbbc97a4e1898179d6997532c14-hjhj.vercel.app/api/webhook"
+  }
+}
