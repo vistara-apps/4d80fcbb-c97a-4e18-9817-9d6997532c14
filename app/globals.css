@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: hsl(214, 30%, 12%);
+  --accent: hsl(204, 96%, 55%);
+  --primary: hsl(210, 95%, 45%);
+  --surface: hsl(214, 35%, 15%);
+  --text-primary: hsl(0, 0%, 90%);
+  --text-secondary: hsl(0, 0%, 70%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #1a1b3a 0%, #2d1b69 50%, #1a1b3a 100%);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, #1a1b3a 0%, #2d1b69 50%, #1a1b3a 100%);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .prediction-card {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: var(--card);
+    transition: all 200ms ease-in-out;
+  }
+  
+  .prediction-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.3);
+  }
+  
+  .stake-button {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .stake-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px hsla(210, 95%, 45%, 0.3);
+  }
+  
+  .stake-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
